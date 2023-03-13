@@ -5,7 +5,7 @@ import { ProductItems } from "../product/ProductItems"
 
 export const TopProduct = () => {
   const [cartItems, setCartItems] = useState(topProducts)
-  const allCategories = ["all", ...new Set(cartItems.map((item) => item.category))]
+  const allCategories = ["Todos", ...new Set(cartItems.map((item) => item.category))]
   const [category, setCategory] = useState(allCategories)
 
   /*console.log(setCartItems)
@@ -26,7 +26,7 @@ export const TopProduct = () => {
       <section className='topproduct'>
         <div className='container'>
           <div className='head'>
-            <Heading title='Top Selling Products' desc='Meet our newbies! The latest templates uploaded to the marketplace.' />
+            <Heading title='Productos mas vendidos' desc='Aqui podras observar los productos con mayor rating de ventas.' />
             <div className='category'>
               {category.map((category) => (
                 <button className='button' onClick={() => handleFilter(category)}>

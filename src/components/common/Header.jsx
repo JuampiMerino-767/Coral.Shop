@@ -79,7 +79,7 @@ export const Header = () => {
           </nav>
           <div className='right'>
             <div className='right_search'>
-              <input type='text' placeholder='Search Products...' />
+              <input type='text' placeholder='Buscar productos...' />
               <BiSearch className='serachIcon heIcon' />
             </div>
             <div className='right_user'>
@@ -89,7 +89,7 @@ export const Header = () => {
             <div className='right_card'>
               <button className='button' onClick={() => setCartList(!cartList)}>
                 <BsBagCheck className='shop heIcon' />
-                MY CART<span> ({getdata.length})</span>
+                Mi carrito<span> ({getdata.length})</span>
               </button>
               <div className={cartList ? "showCart" : "hideCart"}>
                 {getdata.length ? (

@@ -1,5 +1,9 @@
 @include media-md {
+  
   header {
+    .left{
+      display: none;
+    }
     .toggle {
       display: block;
       margin-right: 230%;
@@ -14,6 +18,7 @@
         display: none;
       }
 
+      
       .mobile-nav {
         display: block;
         @include positions(absolute, 0, none, -50px, none, none, none);
@@ -59,12 +64,14 @@
 
   // card
   .cards {
-    @include grid(repeat(3, 1fr), 30px);
+
+    @include grid(repeat(2, 1fr), 5px);
+   
   }
   .topproduct,
   .product {
     .product_items {
-      @include grid(repeat(2, 1fr), 30px);
+      @include grid(repeat(1, 1fr), 30px);
     }
   }
   .topproduct {

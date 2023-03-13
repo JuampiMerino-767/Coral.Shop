@@ -1,4 +1,5 @@
 .topproduct {
+  
   .heading {
     text-align: left;
   }
@@ -7,9 +8,12 @@
   }
   .category {
     @extend .head;
+
     width: 50%;
     button {
-      margin-left: 20px;
+      height: 50px;
+      width: 120px;
+      display: none;
     }
   }
 }

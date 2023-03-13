@@ -17,7 +17,7 @@ export const Home = () => {
       <Product />
       <Banner />
       <TopProduct />
-      <Price />
+
       <Testimonial />
       <Blog />
     </>

@@ -1,3 +1,5 @@
+
+
 import React from "react"
 import { price } from "../../assets/data/data"
 import { Heading } from "../../common/Heading"
@@ -6,7 +8,7 @@ export const Price = () => {
   return (
     <>
       <section className='price'>
-        <Heading title='Choose The Plans' desc='Meet our newbies! The latest templates uploaded to the marketplace.' />
+        <Heading title='Sobre nosotros' desc='Conocenos mas.' />
 
         <div className='content'>
           {price.map((item) => (
@@ -35,3 +37,4 @@ export const Price = () => {
     </>
   )
 }
+
